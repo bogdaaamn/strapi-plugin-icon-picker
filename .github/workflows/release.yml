@@ -12,7 +12,6 @@ jobs:
   publish-package:
     runs-on: ubuntu-latest
     permissions:
-      packages: write
       contents: write
       issues: write
       pull-requests: write
@@ -22,13 +21,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          registry-url: https://npm.pkg.github.com/
-      - name: Create semantic release
-        run: npx semantic-release --branches release
+      - name: Create semantic release and publish
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
