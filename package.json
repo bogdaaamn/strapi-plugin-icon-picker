@@ -19,6 +19,7 @@
     "@JonssonWorkwear:registry": "https://npm.pkg.github.com"
   },
   "release": {
+    "access": "public",
     "branches": [
       "release"
     ],
