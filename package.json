@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Select an icon from a list of SVG assets",
   "strapi": {
-    "name": "strapi-plugin-icon-picker",
+    "name": "icon-picker",
     "description": "List of icons, then pick one",
     "kind": "plugin",
     "displayName": "Icon picker"
