@@ -9,7 +9,7 @@
     "displayName": "Icon picker"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.12.4"
+    "@strapi/strapi": "^4.12.5"
   },
   "repository": {
     "type": "git",
