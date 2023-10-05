@@ -26,7 +26,7 @@ To install this plugin simply run this command in the Strapi project:
 yarn add @jonssonworkwear/strapi-plugin-icon-picker
 ```
 
-## ✨ Usage
+### Content-type builder
 
 When adding a new field to a content type, select **CUSTOM** (instead of **DEAFULT**), then select **Icon picker**.
 
@@ -40,6 +40,14 @@ Inside a content-type, we can use the following schema:
   "customField": "plugin::icon-picker.IconPicker"
 }
 ```
+
+## ✨ Usage
+
+- **Icon selection:** Click on one of the icons from the grid.
+- **Search icon:** Click on the magnifying glass to search by the name of the icon.
+- **Remove selection**: Click on the trash bin icon, this will leave the value of the field empty (unless required).
+
+The plugin will store the name of the icon in a text field.
 
 ## 🪛 Development
 
