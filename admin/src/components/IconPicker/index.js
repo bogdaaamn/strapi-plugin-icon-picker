@@ -36,11 +36,11 @@ const IconPickerWrapper = styled(Flex)`
 const IconPick = ({ iconKey, name, onChange, isSelected, ariaLabel }) => {
   return (
     <Field name={name} required={false}>
-      <FieldLabel htmlFor={iconKey} id={`${iconKey}-label`}>
+      <FieldLabel htmlFor={`${iconKey}-${name}`} id={`${iconKey}-${name}`}>
         <VisuallyHidden>
           <FieldInput
             type="radio"
-            id={iconKey}
+            id={`${iconKey}-${name}`}
             name={name}
             checked={isSelected}
             onChange={onChange}
